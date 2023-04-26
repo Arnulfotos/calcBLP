@@ -35,10 +35,10 @@ function computeResult(e) {
 	let palabrasSingulares = ["dia", "persona", "auto", "noche"]
 	let palabrasSingulares2 = [...palabrasSingulares]
 
-	for (i = 0; i < palabrasSingulares.length; i++) {
+	for (i = 0; i < palabrasSingulares2.length; i++) {
 
 		if (UIvalores[i] > 1) {
-			palabrasSingulares[i] += "s"
+			palabrasSingulares2[i] += "s"
 		}
 
 	}
@@ -47,8 +47,8 @@ function computeResult(e) {
 
 	const datoTextoCalc = {}
 
-	palabrasSingulares2.forEach((element, index) => {
-		datoTextoCalc[element] = palabrasSingulares[index];
+	palabrasSingulares.forEach((element, index) => {
+		datoTextoCalc[element] = palabrasSingulares2[index];
 	});
 
 	console.log(datoTextoCalc)
